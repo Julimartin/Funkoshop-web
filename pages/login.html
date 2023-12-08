@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FUNKOSHOP | Login</title>
+        <link rel="stylesheet" href="../css/index.css"/>
+        <link rel="stylesheet" href="../css/login.css"/>
+    </head>
+    <body class="body__class">
+        <header>
+            <nav class="navbar container">
+                <picture class="navbar__logo">
+                    <a href="/">
+                    <img
+                        src="../img/branding/logo_light_horizontal.svg"
+                        alt="Isologotipo de la Marca Funkoshop"
+                    />
+                    </a>
+                </picture>
+                <ul class="navbar__menu">
+                    <li class="navbar- navbar__link">
+                        <a href="/pages/shop.html">VER TIENDA</a>
+                    </li>
+                    <li class="navbar- navbar__link">
+                        <a href="/pages/admin.html">ADMIN</a>
+                    </li>
+                    <li class="navbar- navbar__link"><a href="../../index.html">SALIR</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="register-content container">
+            <h3 class="register-title">INGRESAR A MI CUENTA</h3>
+
+            <form class="form-content" action="">
+                <section class="form-input">
+                    <p>Email:</p>
+                    <input type="email" name="email" placeholder="johndoe@correo.com" required/>
+                </section>
+
+                <section class="form-input">
+                    <p>Contraseña</p>
+                    <input
+                    type="password"
+                    name="password"
+                    placeholder="ingrese contraseña"
+                    required
+                    />
+                </section>
+
+                <section class="form-button">
+                    <button>Ingresar</button>
+
+                    <div class="form-checkbox">
+                        <input class="checkbox" id="checkbox" type="checkbox"/>
+                        <label for="checkbox">Recordarme</label>
+                    </div>
+                </section>
+            </form>
+            <a class="login__promo" href="">Olvidé mi contraseña</a>
+        </main>
+
+        <footer>
+            <footer class="footer">
+            <nav class="navbar container">
+                <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/shop.html">SHOP</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="../pages/register.html"
+                    >REGISTRARSE</a
+                    >
+                </li>
+                <li>
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li>
+                </ul>
+
+                <picture>
+                <img src="../img/branding/isotype.svg" alt="" />
+                </picture>
+            </nav>
+
+            <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+            </footer>
+        </footer>
+        <script src="../js/cart.js"></script>
+    </body>
+</html>

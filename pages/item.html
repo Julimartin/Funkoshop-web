@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item | Funkoshop</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/item.css">
 </head>
 <body>
     <header>
@@ -53,11 +54,11 @@
                 <h3 class="product_title">BABY YODA BLUEBALL</h3>
                 <p class="product_text">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
                 <h3 class="product_price">$ 1799,99</h3>
-                <div class="product-units">
-                    <input class="product-units_quantity" type="text" placeholder="0"></input>
-                    <div class="product-units_buttons">
-                        <button class="product-units_buttons_plus" type="button">+</button>
-                        <button class="product-units_buttons_minus" type="button">-</button>
+                <div class="product_cart">
+                    <input class="product_input" type="text" name="quantity" id="quantity" placeholder="0"></input>
+                    <div class="product_buttons">
+                        <button id="add" class="product_buttons_quantity" type="button">+</button>
+                        <button id="substract" class="product_buttons_quantity" type="button">-</button>
                     </div>
                     <button class="product-button-addcart" type="submit">Agregar al Carrito</button>
                         <!-- <button class="product-button-addcart"></button> -->
@@ -150,6 +151,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="../js/item.js"></script>
     <script src="../js/glide.js"></script>
 </body>
 </html>

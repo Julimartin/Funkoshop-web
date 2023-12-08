@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Funkoshop | Register</title>
+
+        <link rel="stylesheet" href="../../css/index.css">
+        <link rel="stylesheet" href="../../css/admin_styles/adminStyle.css">
+        <link rel="stylesheet" href="../../css/admin_styles/registerAdmin.css">
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar container">
+                <picture class="navbar__logo">
+                    <a href="/">
+                    <img
+                        src="../../img/branding/logo_light_horizontal.svg"
+                        alt="Isologotipo de la Marca Funkoshop"
+                    />
+                    </a>
+                </picture>
+                <ul class="navbar__menu">
+                    <li class="navbar navbar__link">
+                        <a href="../../pages/shop.html" target="_blank"">VER TIENDA</a>
+                    </li>
+                    <li class="navbar navbar__link">
+                        <a href="../admin/admin.html">ADMIN</a>
+                    </li>
+                    <li class="navbar navbar__link"><a href="../../index.html">SALIR</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-admin container">
+            <h1>Crea tu cuenta</h1>
+
+            <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+
+            <form>
+                <label for="nombre" class="nombre">Nombre:</label>
+                <input id="nombre" type="text" placeholder="John" required>
+
+                <label for="apellido" class="apellido">Apellido:</label>
+                <input id="apellido" type="text" placeholder="Doe" required>
+
+                <label for="email" class="email">Email:</label>
+                <input id="email" type="email" placeholder="johndoe@correo.com" required>
+
+                <label for="contraseña" class="contraseña">Contraseña:</label>
+                <input id="contraseña" type="password" placeholder="• • • • • • • • •" required>
+
+                <label for="repitaContraseña" class="repita-contraseña">Repita contraseña:</label>
+                <input id="repitaContraseña" type="password" placeholder="• • • • • • • • •" required>
+
+                <section class="submit">
+                    <button class="btn-submit" type="submit" value="Submit">Registrar</button>
+        
+                    <div class="terminosYCondiciones">
+                        <input id="terminosCondiciones" type="checkbox" required>
+                        <label for="terminosCondiciones" class="terminos-Condiciones">Acepto <a href="">Términos y condiciones</a></label>
+                    </div>       
+                </section>
+            </form>
+        </main>
+        <footer>
+            <footer class="footer">
+            <nav class="navbar container">
+                <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop.html" target="_blank">SHOP</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="../admin/register_admin.html">REGISTRARSE</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li>
+                </ul>
+
+                <picture>
+                <img src="../../img/branding/isotype.svg" alt="" />
+                </picture>
+            </nav>
+
+            <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+            </footer>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Funkoshop | Edit Item</title>
+
+        <link rel="stylesheet" href="../../css/index.css">
+        <link rel="stylesheet" href="../../css/admin_styles/adminStyle.css">
+        <link rel="stylesheet" href="../../css/admin_styles/createAdminStyle.css">
+        <link rel="stylesheet" href="../../css/admin_styles/editAdminStyle.css">
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar container">
+                <picture class="navbar__logo">
+                    <a href="/">
+                    <img
+                        src="../../img/branding/logo_light_horizontal.svg"
+                        alt="Isologotipo de la Marca Funkoshop"
+                    />
+                    </a>
+                </picture>
+                <ul class="navbar__menu">
+                    <li class="navbar navbar__link">
+                        <a href="../../pages/shop.html" target="_blank"">VER TIENDA</a>
+                    </li>
+                    <li class="navbar navbar__link">
+                        <a href="../admin/admin.html">ADMIN</a>
+                    </li>
+                    <li class="navbar navbar__link"><a href="../../index.html">SALIR</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-admin container">
+            <h1>Editar item</h1>
+            <form>
+                <section class="new-item_filtros">
+                    <label for="categoria">Categoria:
+                        <select id="categoria-edit">
+                            <option value="figuras">Figuras</option>
+                            <option value="llaveros">Llaveros</option>
+                            <option value="remeras">Remeras</option>
+                        </select>
+                    </label>
+                    
+                    <label for="licencia">Licencia:
+                        <select id="licencia-edit">
+                            <option value="star Wars">Star Wars</option>
+                            <option value="harry Potter">Harry Potter</option>
+                            <option value="pokemon">Pokemon</option>
+                        </select>
+                    </label>
+                </section>
+                
+
+                <label for="nombreProducto">Nombre del producto:
+                    <input type="text" id="nombreProducto" placeholder="Kakashi Hatake Shippuden Saga">
+                </label>
+
+                <textarea name="descripcion" id="descripcion" cols="9" rows="10"></textarea>
+
+                <div>
+                    <section class="number-inputs number-inputs_1">
+                        <label for="sku">SKU:
+                            <input type="text" id="sku" placeholder="SSK111AB001">
+                        </label>
+                        <label for="precio">Precio:
+                            <input type="text" id="precio" placeholder="$ 0.000,00">
+                        </label>
+                        <label for="stock">Stock:
+                            <input type="text" id="stock" placeholder="0">
+                        </label>
+                    </section>
+
+                    <section class="number-inputs">
+                        <label for="descuento">Descuento:
+                            <input type="text" id="descuento" placeholder="0%">
+                        </label>
+                        <label for="cuotas">Cuotas:
+                            <select id="cuotas">
+                                <option value="1 cuotas sin interés">1 cuotas sin interés</option>
+                                <option value="2 cuotas sin interés">2 cuotas sin interés</option>
+                                <option value="3 cuotas sin interés" selected>3 cuotas sin interés</option>
+                            </select>
+                        </label>
+                    </section>
+                </div>
+
+                <label for="imagenes">Imágenes:
+                    <input id="imagenes" type="file" name="file"/>
+                </label>
+
+                <div 
+                class="img-cargadas">
+                    <figure>
+                        <img style="width:150px"; src="../../img/pokemon/charmander-1.webp" alt="">
+                        <figcaption>Frente</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img style="width:150px"; src="../../img/pokemon/charmander-box.webp" alt="">
+                        <figcaption>Dorso</figcaption>
+                    </figure>         
+                </div>
+
+                <button class="btn-form" type="submit" value="submit">Modificar producto</button>              
+            </form>
+        </main>
+        <footer>
+            <footer class="footer">
+            <nav class="navbar container">
+                <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop.html" target="_blank">SHOP</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="../admin/register_admin.html">REGISTRARSE</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li>
+                </ul>
+
+                <picture>
+                <img src="../../img/branding/isotype.svg" alt="" />
+                </picture>
+            </nav>
+
+            <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+            </footer>
+        </footer>
+    </body>
+</html>

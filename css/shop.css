@@ -1,0 +1,81 @@
+.body-shop{
+    display: flex; 
+    padding-top: 50px;
+}
+
+/* ASIDE */
+
+.barra-lateral-shop{
+    width: 250px;   
+    justify-content: center;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-large);
+    font-weight: 500;
+    gap: var(--spacing-8);
+}
+
+input, select {
+    padding: var(--spacing-8);
+}
+
+#buscador, #ordenar-por {
+    width: 200px;
+    height: 40px;
+    border-radius: 6px;
+    border: 2px solid #30343F;
+    margin-bottom: var(--spacing-16);
+}
+
+.filtro__check {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    padding-bottom: var(--spacing-8);
+    padding-left: var(--spacing-12);
+}
+
+.barra-lateral-filtro label {
+    font-size: var(--font-medium);
+}
+
+legend {
+    font-size: var(--font-large);
+    font-weight: 500;
+    margin-bottom: var(--spacing-8);
+}
+
+#filtro {
+    font-size: var(--font-medium);
+}
+
+.precio_filtro {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-bottom: var(--spacing-16);
+}
+
+.precio_filtro input {
+    width: 60px;
+    height: 28px;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+
+/* SHOP */
+
+.body-shop-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop__items {
+    display:flex;
+    gap: var(--spacing-12);
+}

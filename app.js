@@ -21,6 +21,6 @@ app.use(express.static(path.resolve(__dirname, 'public')));
 app.use('/', mainRoutes);
 app.use('/shop', shopRoutes);
 app.use('/admin', adminRoutes);
-app.use('/admin', authRoutes);
+app.use('/auth', authRoutes);
 
 app.listen(4000, () => console.log( 'servidor corriendo en http://localhost:4000'));

@@ -1,38 +1,17 @@
+<%- include('../partials/header_Admin') %>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Funkoshop | Create Item</title>
+        <title>Crear Item | Funkoshop </title>
 
         <link rel="stylesheet" href="../../css/index.css">
         <link rel="stylesheet" href="../../css/admin_styles/adminStyle.css">
         <link rel="stylesheet" href="../../css/admin_styles/createAdminStyle.css">
-
     </head>
     <body>
-        <header>
-            <nav class="navbar container">
-                <picture class="navbar__logo">
-                    <a href="/">
-                    <img
-                        src="../../img/branding/logo_light_horizontal.svg"
-                        alt="Isologotipo de la Marca Funkoshop"
-                    />
-                    </a>
-                </picture>
-                <ul class="navbar__menu">
-                    <li class="navbar navbar__link">
-                        <a href="../../pages/shop.html" target="_blank"">VER TIENDA</a>
-                    </li>
-                    <li class="navbar navbar__link">
-                        <a href="../admin/admin.html">ADMIN</a>
-                    </li>
-                    <li class="navbar navbar__link"><a href="../../index.html">SALIR</a></li>
-                </ul>
-            </nav>
-        </header>
-
         <main class="main-admin container">
             <h1>CREAR NUEVO ITEM</h1>
             <form>
@@ -101,28 +80,8 @@
                 </div>
             </form>
         </main>
-        <footer>
-            <footer class="footer">
-            <nav class="navbar container">
-                <ul class="navbar__item">
-                <li class="navbar__item">
-                    <a class="navbar__link" href="../shop.html" target="_blank">SHOP</a>
-                </li>
-                <li>
-                    <a class="navbar__link" href="../admin/register_admin.html">REGISTRARSE</a>
-                </li>
-                <li>
-                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
-                </li>
-                </ul>
 
-                <picture>
-                <img src="../../img/branding/isotype.svg" alt="" />
-                </picture>
-            </nav>
-
-            <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
-            </footer>
-        </footer>
+        <%- include('../partials/footer') %>
+        
     </body>
 </html>

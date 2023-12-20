@@ -66,6 +66,7 @@ button {
     font-weight: 200;
     border: none;
     padding:var(--spacing-8) var(--spacing-20);
+    cursor: pointer;
 }
 
 .login__promo {

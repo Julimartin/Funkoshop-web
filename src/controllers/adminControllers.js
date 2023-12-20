@@ -1,10 +1,18 @@
+const path = require('path');
+
 const adminControllers = {
-    admin: (req, res) => res.send('Route for Admin View'),
-    create: (req, res) => res.send('Route for Create View'),
-    new: (req, res) => res.send('Route for add a new item created'),
-    edit: (req, res) => res.send('Route for find and retrieve a product from an id to edit'),
-    update: (req, res) => res.send('Route for find and update an item id'),
-    delete: (req, res) => res.send('Route for find and delete an item id'),
+    adminView: (req, res) => {
+        res.render(path.resolve(__dirname, '../views/admin/admin'));
+    },
+    createView: (req, res) => {
+        res.render(path.resolve(__dirname, '../views/admin/create')); //
+    },
+    addItem: (req, res) => res.send('Route for add a new item created'),
+    editView: (req, res) => {
+        res.render(path.resolve(__dirname, '../views/admin/edit'));
+    },
+    updateItem: (req, res) => res.send('Route for find and update an item id'),
+    deleteItem: (req, res) => res.send('Route for find and delete an item id'),
 
 }
 

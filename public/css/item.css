@@ -6,9 +6,15 @@
     padding: var(--spacing-16);
 }
 
+.collection {
+    margin-top: var(--spacing-36);
+    max-width: 1000px;
+}
+
 .product_license {
     font-size: var(--font-xsmall);
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .product_title {

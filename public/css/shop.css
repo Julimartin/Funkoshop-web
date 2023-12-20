@@ -72,10 +72,14 @@ legend {
 
 .body-shop-items {
     display: flex;
-    flex-direction: column;
 }
 
 .shop__items {
     display:flex;
-    gap: var(--spacing-12);
+    flex-wrap: wrap;
+    gap: var(--spacing-20);
+}
+
+.shop__item {
+    width: 300px;
 }
